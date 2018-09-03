@@ -19,6 +19,7 @@
     </parent>
 
     <properties>
+        <infrastructure.version>2.0.37-SNAPSHOT</infrastructure.version>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <commons-configuration.version>1.10</commons-configuration.version>
@@ -84,6 +85,19 @@
             </dependency>
             <!-- end -->
 
+            <!-- infrastructure -->
+            <dependency>
+                <groupId>org.infrastructure</groupId>
+                <artifactId>org.infrastructure.result</artifactId>
+                <version>${infrastructure.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.infrastructure</groupId>
+                <artifactId>org.infrastructure.common</artifactId>
+                <version>${infrastructure.version}</version>
+            </dependency>
+            <!-- end -->
+
         </dependencies>
 
     </dependencyManagement>
@@ -114,8 +128,8 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
