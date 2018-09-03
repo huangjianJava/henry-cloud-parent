@@ -15,7 +15,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.13.RELEASE</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <properties>
@@ -69,6 +69,47 @@
 
         <kaptcha.version>0.0.9</kaptcha.version>
     </properties>
+
+    <!-- dependencyManagement：只是声明依赖，并不实现引入，因此子项目需要显示的声明需要用的依赖。
+    只有在子项目中写了该依赖项，并且没有指定具体版本，才会从父项目中继承该项，并且version和scope都读取自父pom;
+    另外如果子项目中指定了版本号，那么会使用子项目中指定的jar版本。
+    dependencies：即使在子项目中不写该依赖项，那么子项目仍然会从父项目中继承该依赖项（全部继承）-->
+    <dependencyManagement>
+        <dependencies>
+            <!-- guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <!-- end -->
+
+        </dependencies>
+
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- end -->
+
+    </dependencies>
+
+    <modules>
+        <module>hcloud-member-service</module>
+        <module>hcloud-member-api</module>
+        <module>hcloud-common</module>
+    </modules>
 
     <build>
         <plugins>

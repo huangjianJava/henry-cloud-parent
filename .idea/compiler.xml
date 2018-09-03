@@ -6,12 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hcloud-common" />
+        <module name="hcloud-member-api" />
         <module name="hcloud-member-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hcloud-common" target="1.8" />
+      <module name="hcloud-member-api" target="1.8" />
       <module name="hcloud-member-service" target="1.8" />
-      <module name="henry-cloud-parent" target="1.6" />
+      <module name="henry-cloud-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

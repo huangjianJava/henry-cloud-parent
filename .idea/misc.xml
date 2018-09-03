@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/hcloud-member-service/pom.xml" />
+        <option value="$PROJECT_DIR$/hcloud-member-api/pom.xml" />
+        <option value="$PROJECT_DIR$/hcloud-common/pom.xml" />
       </list>
     </option>
   </component>
