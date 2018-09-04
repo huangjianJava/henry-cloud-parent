@@ -7,14 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hcloud-common" />
+        <module name="hcloud-eureka-service" />
         <module name="hcloud-member-api" />
         <module name="hcloud-member-service" />
+        <module name="hcloud-message-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hcloud-common" target="1.8" />
+      <module name="hcloud-eureka-service" target="1.8" />
       <module name="hcloud-member-api" target="1.8" />
       <module name="hcloud-member-service" target="1.8" />
+      <module name="hcloud-message-service" target="1.8" />
       <module name="henry-cloud-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>

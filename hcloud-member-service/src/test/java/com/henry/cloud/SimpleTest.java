@@ -3,6 +3,7 @@ package com.henry.cloud;
 import com.henry.cloud.common.enums.YesOrNoEnum;
 import com.henry.cloud.member.dto.DemoDto;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Value;
 
 /**
  * @author huangj

@@ -4,7 +4,6 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>hcloud-member-api</artifactId>
-	<version>1.0.1</version>
 	<packaging>jar</packaging>
 	<name>hcloud-member-api</name>
 	<description>member service api</description>
