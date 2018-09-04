@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/hcloud-eureka-service/hcloud-eureka-service.iml" filepath="$PROJECT_DIR$/hcloud-eureka-service/hcloud-eureka-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hcloud-member-api/hcloud-member-api.iml" filepath="$PROJECT_DIR$/hcloud-member-api/hcloud-member-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/hcloud-member-service/hcloud-member-service.iml" filepath="$PROJECT_DIR$/hcloud-member-service/hcloud-member-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hcloud-message-api/hcloud-message-api.iml" filepath="$PROJECT_DIR$/hcloud-message-api/hcloud-message-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/hcloud-message-service/hcloud-message-service.iml" filepath="$PROJECT_DIR$/hcloud-message-service/hcloud-message-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/henry-cloud-parent.iml" filepath="$PROJECT_DIR$/henry-cloud-parent.iml" />
     </modules>

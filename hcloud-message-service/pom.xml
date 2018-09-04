@@ -26,6 +26,30 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.henry.cloud</groupId>
+			<artifactId>hcloud-common</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.henry.cloud</groupId>
+			<artifactId>hcloud-message-api</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.henry.cloud</groupId>
+			<artifactId>hcloud-member-api</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

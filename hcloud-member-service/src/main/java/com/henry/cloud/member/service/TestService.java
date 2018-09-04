@@ -1,4 +1,4 @@
-package com.henry.cloud.service;
+package com.henry.cloud.member.service;
 
 /**
  * @author huangj

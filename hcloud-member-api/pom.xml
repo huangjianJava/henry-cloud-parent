@@ -21,6 +21,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.henry.cloud</groupId>
+			<artifactId>hcloud-common</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

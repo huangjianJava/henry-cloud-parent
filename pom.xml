@@ -135,6 +135,7 @@
         <module>hcloud-common</module>
         <module>hcloud-eureka-service</module>
         <module>hcloud-message-service</module>
+        <module>hcloud-message-api</module>
     </modules>
 
     <build>
