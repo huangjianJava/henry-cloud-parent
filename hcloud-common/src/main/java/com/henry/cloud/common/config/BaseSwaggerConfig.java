@@ -20,10 +20,10 @@ import java.util.List;
  * @author huangj
  * @version V1.0
  * @title: swagger ui 配置基础类
- * @description: Restful API 访问路径: http://IP:port/{context-path}/documentation/swagger-ui.html
+ * @description: Restful API 访问路径: http://IP:port/{context-path}/swagger-ui.html
  * @date 2018/9/3
  */
-public abstract class BaseSwaggerConfig extends WebMvcConfigurerAdapter {
+public abstract class BaseSwaggerConfig {
 
     /**
      * 扫描 controller 的路径
@@ -103,24 +103,4 @@ public abstract class BaseSwaggerConfig extends WebMvcConfigurerAdapter {
                 .build();
     }
 
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-
-        registry.addRedirectViewController("/documentation/v2/api-docs", "/v2/api-docs");
-        registry.addRedirectViewController("/documentation/swagger-resources/configuration/ui",
-                "/swagger-resources/configuration/ui");
-        registry.addRedirectViewController(
-                "/documentation/swagger-resources/configuration/security",
-                "/swagger-resources/configuration/security");
-        registry.addRedirectViewController("/documentation/swagger-resources",
-                "/swagger-resources");
-    }
-
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/documentation/swagger-ui.html**")
-                .addResourceLocations("classpath:/META-INF/resources/swagger-ui.html");
-        registry.addResourceHandler("/documentation/webjars/**")
-                .addResourceLocations("classpath:/META-INF/resources/webjars/");
-    }
 }
