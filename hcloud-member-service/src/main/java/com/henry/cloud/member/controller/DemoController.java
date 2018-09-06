@@ -69,6 +69,7 @@ public class DemoController {
 
     @ApiOperation(value = "hello测试接口")
     @GetMapping(value = "/hello", produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestProcess(checkLogin = true)
     public ResultData<String> hello() {
         System.out.println("member service 被调用====================");
         return ResultData.createSuccessResult("member service");

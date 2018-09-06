@@ -1,5 +1,6 @@
 package com.henry.cloud;
 
+import org.infrastructure.common.utils.encrypt.EncryptMD5Util;
 import org.junit.Test;
 
 /**
@@ -13,6 +14,7 @@ public class SimpleTest {
 
     @Test
     public void testOthers() {
-
+        String verifyCode = EncryptMD5Util.getMD5("123456");
+        System.out.println("verifyCode:" + verifyCode);
     }
 }

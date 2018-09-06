@@ -6,3 +6,11 @@
 [2018-09-06 16:45:18.356] [ INFO] [http-nio-6011-exec-8] com.henry.cloud.message.controller.DemoController Line:35  - info 级别日志
 [2018-09-06 16:55:40.354] [ INFO] [main] com.henry.cloud.MessageServiceApplication Line:597 - The following profiles are active: dev
 [2018-09-06 16:55:45.408] [ INFO] [main] com.henry.cloud.MessageServiceApplication Line:57  - Started MessageServiceApplication in 9.692 seconds (JVM running for 10.278)
+[2018-09-06 19:55:33.160] [ INFO] [main] com.henry.cloud.MessageServiceApplication Line:597 - The following profiles are active: dev
+[2018-09-06 19:55:38.959] [ INFO] [main] com.henry.cloud.MessageServiceApplication Line:57  - Started MessageServiceApplication in 10.455 seconds (JVM running for 10.933)
+[2018-09-06 19:59:01.146] [ INFO] [main] com.henry.cloud.MessageServiceApplication Line:597 - The following profiles are active: dev
+[2018-09-06 19:59:06.387] [ INFO] [main] com.henry.cloud.MessageServiceApplication Line:57  - Started MessageServiceApplication in 9.857 seconds (JVM running for 10.422)
+[2018-09-06 20:10:38.701] [ INFO] [main] com.henry.cloud.MessageServiceApplication Line:597 - The following profiles are active: dev
+[2018-09-06 20:10:44.228] [ INFO] [main] com.henry.cloud.MessageServiceApplication Line:57  - Started MessageServiceApplication in 11.1 seconds (JVM running for 11.653)
+[2018-09-06 20:11:24.886] [ INFO] [main] com.henry.cloud.MessageServiceApplication Line:597 - The following profiles are active: dev
+[2018-09-06 20:11:30.359] [ INFO] [main] com.henry.cloud.MessageServiceApplication Line:57  - Started MessageServiceApplication in 10.19 seconds (JVM running for 10.721)
