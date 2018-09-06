@@ -4,6 +4,8 @@ import com.henry.cloud.member.dto.MemberModifyReqDto;
 import io.swagger.annotations.ApiOperation;
 import org.infrastructure.common.exception.ControllerException;
 import org.infrastructure.result.ResultData;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.validation.annotation.Validated;
@@ -20,6 +22,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("${api.url.prefix}")
 public class DemoController {
 
+    private static final Logger logger = LoggerFactory.getLogger(DemoController.class);
+
     @Value("${from}")
     private String from;
 
@@ -28,6 +32,14 @@ public class DemoController {
 
     @Value("${defconf.nottoken}")
     private String remoteOne;
+
+    @ApiOperation(value = "日志记录测试")
+    @GetMapping(value = "/log-test", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResultData<String> log() {
+        logger.error("error 级别日志");
+        logger.info("info 级别日志");
+        return ResultData.createSuccessResult("日志记录测试");
+    }
 
     @ApiOperation(value = "读取配置中心测试")
     @GetMapping(value = "/get-config", produces = MediaType.APPLICATION_JSON_VALUE)

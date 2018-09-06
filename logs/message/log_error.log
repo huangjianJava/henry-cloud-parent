@@ -1,0 +1,5 @@
+[2018-09-06 16:19:58.540] [ERROR] [http-nio-6011-exec-10] com.henry.cloud.message.controller.DemoController Line:34  - error 级别日志
+[2018-09-06 16:36:21.512] [ERROR] [http-nio-6011-exec-7] com.henry.cloud.message.controller.DemoController Line:34  - error 级别日志
+[2018-09-06 16:37:28.656] [ERROR] [http-nio-6011-exec-1] com.henry.cloud.message.controller.DemoController Line:34  - error 级别日志
+[2018-09-06 16:45:18.355] [ERROR] [http-nio-6011-exec-8] com.henry.cloud.message.controller.DemoController Line:34  - error 级别日志
+[2018-09-06 16:47:04.285] [ERROR] [http-nio-6011-exec-1] com.henry.cloud.message.controller.DemoController Line:34  - error 级别日志

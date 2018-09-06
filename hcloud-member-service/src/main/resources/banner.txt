@@ -1,0 +1,19 @@
+
+  _________.__           __                   
+ /   _____/|__|  ____  _/  |_   ____  _______ 
+ \_____  \ |  | /    \ \   __\_/ __ \ \_  __ \
+ /        \|  ||   |  \ |  |  \  ___/  |  | \/
+/_______  /|__||___|  / |__|   \___  > |__|   
+        \/          \/             \/         
+ :: hcloud member ::
+
+ Spring Profiles Active: ${spring.profiles.active}
+ Spring Cloud Config Profile: ${spring.cloud.config.profile}
+
+ :: Start
+ Api Url prefix: ${api.url.prefix}
+ Server Port: ${server.port}
+ Server Path: ${server.context-path}
+ Eureka Url: ${eureka.client.serviceUrl.defaultZone}
+ Config Uri: ${spring.cloud.config.uri}
+ :: End

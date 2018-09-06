@@ -1,0 +1,2 @@
+[2018-09-06 15:31:35.362] [ERROR] [http-nio-6010-exec-5] com.henry.cloud.member.controller.DemoController Line:39  - error 级别日志
+[2018-09-06 15:36:41.371] [ERROR] [http-nio-6010-exec-7] com.henry.cloud.member.controller.DemoController Line:39  - error 级别日志
