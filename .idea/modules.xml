@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hcloud-common/hcloud-common.iml" filepath="$PROJECT_DIR$/hcloud-common/hcloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hcloud-config-service/hcloud-config-service.iml" filepath="$PROJECT_DIR$/hcloud-config-service/hcloud-config-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hcloud-eureka-service/hcloud-eureka-service.iml" filepath="$PROJECT_DIR$/hcloud-eureka-service/hcloud-eureka-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hcloud-member-api/hcloud-member-api.iml" filepath="$PROJECT_DIR$/hcloud-member-api/hcloud-member-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/hcloud-member-service/hcloud-member-service.iml" filepath="$PROJECT_DIR$/hcloud-member-service/hcloud-member-service.iml" />

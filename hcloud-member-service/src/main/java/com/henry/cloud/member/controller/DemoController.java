@@ -1,13 +1,10 @@
 package com.henry.cloud.member.controller;
 
 import com.henry.cloud.member.dto.MemberModifyReqDto;
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.infrastructure.common.exception.ControllerException;
 import org.infrastructure.result.ResultData;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.MessageSource;
-import org.springframework.context.support.ResourceBundleMessageSource;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +19,21 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("${api.url.prefix}")
 public class DemoController {
+
+    @Value("${from}")
+    private String from;
+
+    @Value("${spring.cloud.config.name}")
+    private String localOne;
+
+    @Value("${defconf.nottoken}")
+    private String remoteOne;
+
+    @ApiOperation(value = "读取配置中心测试")
+    @GetMapping(value = "/get-config", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResultData<String> getConfigCenter() {
+        return ResultData.createSuccessResult("配置中心:" + from + "," + localOne + "," + remoteOne);
+    }
 
     @ApiOperation(value = "入参校验")
     @PostMapping(value = "/valid-param", produces = MediaType.APPLICATION_JSON_VALUE)

@@ -149,6 +149,7 @@
         <module>hcloud-eureka-service</module>
         <module>hcloud-message-service</module>
         <module>hcloud-message-api</module>
+        <module>hcloud-config-service</module>
     </modules>
 
     <build>
