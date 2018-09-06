@@ -117,6 +117,12 @@
 			<appender-ref ref="FILEWARN" />
 			<appender-ref ref="FILEINFO" />
 		</logger>
+		<logger name="org.infrastructure" additivity="false" level="INFO">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="FILEERROR" />
+			<appender-ref ref="FILEWARN" />
+			<appender-ref ref="FILEINFO" />
+		</logger>
 	</springProfile>
 
 	<springProfile name="test">
@@ -126,11 +132,23 @@
 			<appender-ref ref="FILEWARN" />
 			<appender-ref ref="FILEINFO" />
 		</logger>
+		<logger name="org.infrastructure" additivity="false" level="INFO">
+			<appender-ref ref="CONSOLE" />
+			<appender-ref ref="FILEERROR" />
+			<appender-ref ref="FILEWARN" />
+			<appender-ref ref="FILEINFO" />
+		</logger>
 	</springProfile>
 
 	<springProfile name="prod">
 		<logger name="com.henry" additivity="false" level="INFO">
 		    <appender-ref ref="CONSOLE" />
+			<appender-ref ref="FILEERROR" />
+			<appender-ref ref="FILEWARN" />
+			<appender-ref ref="FILEINFO" />
+		</logger>
+		<logger name="org.infrastructure" additivity="false" level="INFO">
+			<appender-ref ref="CONSOLE" />
 			<appender-ref ref="FILEERROR" />
 			<appender-ref ref="FILEWARN" />
 			<appender-ref ref="FILEINFO" />

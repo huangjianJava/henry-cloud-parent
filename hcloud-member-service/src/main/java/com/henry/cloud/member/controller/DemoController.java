@@ -2,6 +2,7 @@ package com.henry.cloud.member.controller;
 
 import com.henry.cloud.member.dto.MemberModifyReqDto;
 import io.swagger.annotations.ApiOperation;
+import org.infrastructure.common.aop.RequestProcess;
 import org.infrastructure.common.exception.ControllerException;
 import org.infrastructure.result.ResultData;
 import org.slf4j.Logger;
@@ -32,6 +33,13 @@ public class DemoController {
 
     @Value("${defconf.nottoken}")
     private String remoteOne;
+
+    @ApiOperation(value = "日志权限注解测试")
+    @PostMapping(value = "/annotation-test", produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestProcess(checkLogin = false)
+    public ResultData<String> annotation(@Validated @RequestBody MemberModifyReqDto dto) {
+        return ResultData.createSuccessResult("日志权限注解测试:" + dto.getPhone());
+    }
 
     @ApiOperation(value = "日志记录测试")
     @GetMapping(value = "/log-test", produces = MediaType.APPLICATION_JSON_VALUE)
